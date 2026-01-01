@@ -8,6 +8,10 @@ class Test2 implements ICustomInterface {
 
 }
 
+class Test3 implements ICustomInterface {
+
+}
+
 public class Driver {
 
 	public static void main(String[] args) {
@@ -19,6 +23,10 @@ public class Driver {
 
 		Test2 t2 = new Test2();
 		cf.copy(t2); // Copy functionality allowed
+
+		StupidFunctionality sf = new StupidFunctionality();
+		Test3 t3 = new Test3();
+		sf.doSomethingStupid(t3);
 
 	}
 
