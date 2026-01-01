@@ -1,7 +1,7 @@
 package com.kodewala.interfaces.marker.clonable;
 
-public class CopyObjectsClonable implements Cloneable {
-
+public class CopyObjectsClonable implements Cloneable { // giving permission to clone
+	// Marker interface gives permission
 	private String name;
 	private String id;
 
