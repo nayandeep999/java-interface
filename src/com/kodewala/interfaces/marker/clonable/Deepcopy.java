@@ -29,7 +29,7 @@ public class Deepcopy implements Cloneable {
 	protected Object clone() throws CloneNotSupportedException {
 		Deepcopy dc = (Deepcopy) super.clone();
 		dc.arr = this.arr.clone(); // Creates a brand-new array, Copies all elements into it
-		dc.add = (Address) this.add.clone();
+		dc.add = (Address) this.add.clone(); // Creates a brand-new Array, Copies all elements into it
 		return dc;
 	}
 
@@ -65,8 +65,8 @@ public class Deepcopy implements Cloneable {
 		sc1.age = 28;
 		sc1.name = "Seema"; // This creates a new string & sc1.name points to that string
 		sc1.arr[0] = 90; // changing this not results in change in sc2
-		sc1.add.city = "Delhi";
-		sc1.add.zip = 10;
+		sc1.add.city = "Delhi"; // changing this not results in change in sc2
+		sc1.add.zip = 10; // changing this not results in change in sc2
 
 		System.out.println("sc1: ");
 		sc1.getDetails();
